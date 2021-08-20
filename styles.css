@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images/banner.png);
+  background-size: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #2e8b57;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.mainBlock {
+  width: 50em;
+  background-color: #b9d6ad;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+/* fr - fraction/часть */
+.mainBlock div {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.textIn {
+  height: 2em;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#addBtn {
+  border: none;
+  background-color: rgb(58, 156, 104);
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: rgb(41, 122, 77);
+}
+
+input[type="date"] {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr;
+  align-items: center;
+}
+
+.deleteBtn {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.taskDone {
+  text-decoration: line-through;
+}
